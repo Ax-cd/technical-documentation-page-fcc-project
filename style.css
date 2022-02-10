@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: hsl(208, 7%, 35%);
+    line-height: 1.5;
+
+}
+
+#navbar ul {
+    list-style: none;
+}
+.nav-link {
+    text-decoration: none;
+    line-height: 2;
+    display: block;
+    cursor: pointer;
+    color: hsl(208, 7%, 35%);
+}
+.nav-link:hover {
+    background-color: hsl(210, 11%, 15%);
+    color: hsl(0, 0%, 100%);
+    transition: all 400ms ease;
+}
+
+header {
+    color: hsl(210, 11%, 15%);
+}
+h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 1rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+
+section {
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+code {
+    background-color: hsl(0, 0%, 88%);
+}
+
+#menu-btn {
+    display: none;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 40em) {
+    #navbar {
+        background-color: hsla(205, 7%, 35%, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        min-height: 5rem;
+        height: 10rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid hsl(210, 11%, 15%);
+    }
+
+    h1 {
+        color: hsl(0, 0%, 0%);
+        text-align: right;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-top: 10rem;
+    }
+
+    label {
+        opacity: 1;
+        position: absolute;
+        top: 4rem;
+        left: 2rem;
+        cursor: pointer;
+    }
+
+    /* MENU TOGGLE*/
+    /* Default */
+    #close-menu {
+        display: none;
+    }
+    #nav-links {
+        display: none;
+    }
+    /* Selected */
+    #menu-btn:checked + #nav-links {
+        display: block;
+        margin: -1rem;
+        background-color: hsla(0, 0%, 100%, 0.95);
+        color: hsl(208, 7%, 35%);
+        border-bottom: 1px solid hsl(210, 11%, 15%);
+    }
+}
+
+
+/* Desktop */
+@media screen and (min-width: 40em) {
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 20rem;
+        width: 25rem;
+        height: 240%;
+        border-right: 1px solid hsl(210, 11%, 15%);
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 28rem;
+    }
+
+    label {
+        opacity: 0;
+        display: none;
+    }
+}
