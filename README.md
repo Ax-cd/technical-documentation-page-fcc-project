@@ -19,9 +19,10 @@ And tested with:
 
 
 ## Screenshots
-
+Desktop design:
 ![](images/desktop-design-screenshot.png)
 
+Tablet and mobile design:
 ![](images/tablet-and-mobile-design-screenshot.png)
 
 
